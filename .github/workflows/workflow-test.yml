@@ -23,6 +23,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   
   Second-job:
+    needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again!"
