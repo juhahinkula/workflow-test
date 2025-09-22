@@ -25,6 +25,7 @@ jobs:
   
   Second-job:
     needs: Explore-GitHub-Actions
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again!"
